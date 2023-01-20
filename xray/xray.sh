@@ -105,6 +105,26 @@ cat > /etc/xray/config.json << END
             "clients": [
                {
                  "id": "${uuid}"                 
+#vmessworry
+             }
+          ]
+       },
+       "streamSettings":{
+         "network": "ws",
+            "wsSettings": {
+                "path": "/worryfree"
+          }
+        }
+     },
+     {
+     "listen": "127.0.0.1",
+     "port": "22755",
+     "protocol": "vmess",
+      "settings": {
+            "clients": [
+               {
+                 "id": "${uuid}"  
+                 "alterId": 0
 #vless
              }
           ]
